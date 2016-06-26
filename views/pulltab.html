@@ -1,0 +1,44 @@
+<div ng-init="init()">
+    <div>
+        <img class="course-img" ng-src="{{courseImg}}" />
+        <div class="course-info right">
+            <h1 class="blue">${{courseInfo.cla_cost}}</h1>
+            for {{courseInfo.cla_duration/60}}h
+            <h4 class="blue">Next class starts:<h4>
+                <h4>{{courseInfo.dayName.slice(0,3)}}, {{courseInfo.dateShow}} {{courseInfo.timeShow}}</h4>
+                <span>{{courseInfo.cla_address}}</span>
+                <span>For {{courseInfo.age_description}}, {{courseInfo.col_description}}</span>
+                <span>Register by: {{courseInfo.cla_deadline}}</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="course-info2 left">
+            <h2 class="blue">{{courseInfo.cor_name}}</h2>
+            <span class="blue">By {{courseInfo.use_name}}</span>
+            <span>{{courseInfo.cor_description}}</span>
+        </div>
+        <img class="instructor-img right" ng-src="{{instructorImg}}" />
+    </div>
+    <div class="left you-can-learn">
+        <span class="blue">What you will learn/get:</span>
+        <ul >
+            <li ng-repeat="item in youCanLearn">{{item}}.</li>
+        </ul>
+    </div>
+    <div class="right instructor">
+        <span class="blue">About the instructor</span>
+        <span>{{courseInfo.cor_about_me}}</span>
+
+        <span><strong>For more information, go to:</strong></span>
+        <a ng-href="{{courseLink}}">{{courseLink}}</a>
+    </div>
+    <hr>
+    <div class="pull-tab">
+        <span>{{courseInfo.cor_name}}</span>
+        <span>{{courseLink}}</span>
+    </div>
+    <div class="pull-tab">
+        <span>{{courseInfo.cor_name}}</span>
+        <span>{{courseLink}}</span>
+    </div>
+</div>

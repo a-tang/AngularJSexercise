@@ -1,0 +1,39 @@
+.blue{
+    color: cornflowerblue;
+}
+
+span{
+    display:inline-block;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.course-img{
+    width:49%;
+    margin:1%;
+
+}
+
+.course-info {
+    width:49%
+}
+
+.instructor-img, .instructor{
+ width:20%
+}
+
+.course-info2, .you-can-learn{
+    width:80%
+}
+
+.container{
+    margin: 0 0 280px 0;
+}
+
+.pull-tab{
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+}
